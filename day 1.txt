@@ -1,0 +1,60 @@
+/*When we sum the integers  and , we get the integer . 
+When we sum the floating-point numbers  and , we get . 
+When we concatenate HackerRank with is the best place to learn and practice coding!, 
+we get HackerRank is the best place to learn and practice coding!.
+*/
+
+
+#include <iostream>
+#include <iomanip>
+#include <limits>
+
+using namespace std;
+
+int main() {
+    int i = 4;
+    double d = 4.0;
+    string s = "HackerRank ";
+ // Declare second integer, double, and String variables.
+    int i2=0;
+    double d2=0.0;
+    string s2="";
+
+    // Read and save an integer, double, and String to your variables.
+cin>>i2>>d2;
+
+cin.ignore();
+getline(cin, s2);    
+
+    // Print the sum of both integer variables on a new line.
+cout<<i+i2;
+
+    // Print the sum of the double variables on a new line.
+cout<<"\n"<<fixed<<setprecision(1)<<d+d2;    
+
+    // Concatenate and print the String variables on a new line
+s=s+s2;
+cout<<"\n"<<s;
+    // The 's' variable above should be printed first.
+    
+/*
+Testcase 0
+Congratulations, you passed the sample test case.
+Click the Submit Code button to run you code against all the test cases.
+
+Input (stdin)
+12
+4.0
+is the best place to learn and practice coding!
+Your Output (stdout)
+16
+8.0
+HackerRank is the best place to learn and practice coding!
+Expected Output
+16
+8.0
+HackerRank is the best place to learn and practice coding!
+
+*/
+
+

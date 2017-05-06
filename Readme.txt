@@ -1,0 +1,1 @@
+This was a challenge I took up as a means to see how capable I was in C++, for 30 days I am taking on various tasks with increasing difficulty on HackerRank.com, so far it is a humbling experience, many functions I thought I knew I have had to relearn and many I didn't know existed I have come to learn about.  

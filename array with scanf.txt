@@ -1,0 +1,36 @@
+/*
+Print the  integers of the array in the reverse order in a single line separated by a space.
+
+Sample Input
+
+4
+1 4 3 2
+Sample Output
+
+2 3 4 1
+
+
+*/
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int N;
+
+cin>>N;
+    int arr[N];
+   
+    for(int x=0; x<=N; x++)
+     scanf("%d", &arr[x]);
+    
+   for(int x=N-1; x>=0; x--)
+        cout<<arr[x]<<" "; 
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}

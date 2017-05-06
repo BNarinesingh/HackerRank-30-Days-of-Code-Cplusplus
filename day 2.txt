@@ -1,0 +1,45 @@
+/*Given: 
+Given the meal price (base cost of a meal), tip percent (the percentage of the meal price being added as tip), and tax percent (the percentage of the meal price being added as tax) for a meal, find and print the meal's total cost.
+We round  to the nearest dollar (integer) and then print our result:
+The total meal cost is 15 dollars.
+*/
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    
+double mealCost=0;
+int tipPercent=0;
+int taxPercent=0;
+
+double tip=0, tax=0;
+double totalCost=0;
+
+cin>>mealCost>>tipPercent>>taxPercent;
+
+tip= mealCost*tipPercent/100;
+tax= mealCost*taxPercent/100;
+totalCost= (mealCost + tip + tax);
+
+cout<<"The total meal cost is "<<round(totalCost)<<" dollars.";
+
+    return 0; //end of program
+    
+}
+
+/*
+Congratulations, you passed the sample test case.
+Click the Submit Code button to run you code against all the test cases.
+
+Input (stdin)
+12.00
+20
+8
+Your Output (stdout)
+The total meal cost is 15 dollars.
+Expected Output
+The total meal cost is 15 dollars.
+*/

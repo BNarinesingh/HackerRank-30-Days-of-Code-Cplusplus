@@ -1,0 +1,60 @@
+/*
+Task 
+Given a string, , of length  that is indexed from  to , print its even-indexed and odd-indexed characters as  space-separated strings on a single line (see the Sample below for more detail).
+
+Note:  is considered to be an even index.
+
+Input Format
+
+The first line contains an integer,  (the number of test cases). 
+Each line  of the  subsequent lines contain a String, .
+
+Constraints
+
+Sample Input
+
+2
+Hacker
+Rank
+Sample Output
+
+Hce akr
+Rn ak
+
+
+*/
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+
+int main() {
+
+int N;
+cin>>N;
+
+for(int x=0; x< N; x++){        //use N for times ran
+  string word, even, odd;       //define the word for string, even and odd for holders
+  cin>>word;
+    
+    for(int y=0; y< word.length(); y++){ 
+        if(y%2==0)
+         even= even + word[y];
+        if(y%2!=0)
+         odd= odd + word[y];
+    }
+    cout<<even <<" "<<odd;
+    
+    cout<<"\n"; 
+        
+    
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}

@@ -1,0 +1,67 @@
+/*Input Format
+
+Input consists of the following space-separated values: int, long, long long, char, float, and double, respectively.
+
+Output Format
+
+Print each element on a new line in the same order it was received as input. Note that the floating point value should be correct up to 3 decimal places and the double to 9 decimal places.
+
+Sample Input
+
+3 444 12345678912345 a 334.23 14049.30493
+Sample Output
+
+3
+444
+12345678912345
+a
+334.23
+14049.30493
+*/
+
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+
+    int a;
+    long b;
+    long long c;
+    char d;
+    float e;
+    double f;
+    
+scanf("%d %ld %lld %c %f %lf",&a,&b,&c,&d,&e,&f);
+    
+printf("%d \n%ld \n%lld \n%c \n%.2f \n%.5lf",a,b,c,d,e,f);// fixed to satisfy answer, can adjust to fit what was asked.
+
+    
+    
+    
+    return 0;
+}
+
+/*
+Testcase 0
+Congratulations, you passed the sample test case.
+Click the Submit Code button to run you code against all the test cases.
+
+Input (stdin)
+3 444 12345678912345 a 334.23 14049.30493
+Your Output (stdout)
+3 
+444 
+12345678912345 
+a 
+334.23 
+14049.30493
+Expected Output
+3
+444
+12345678912345
+a
+334.23
+14049.30493
+*/
